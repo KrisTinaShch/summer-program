@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_ëîé_1" data-name="‘ëîé_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #000;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 4.85px;
+      }
+
+      .cls-2 {
+        stroke: #fff;
+      }
+    </style>
+  </defs>
+  <g>
+    <circle cx="50" cy="50" r="23.16367" transform="translate(-1.68953 1.74866) rotate(-1.97033)"/>
+    <g>
+      <line class="cls-2" x1="49.47683" y1="34.79233" x2="50.52319" y2="65.20767"/>
+      <line class="cls-2" x1="34.79233" y1="50.52318" x2="65.20766" y2="49.47682"/>
+    </g>
+  </g>
+  <path class="cls-1" d="M89.18344,41.36175l-.53274-15.48558L48.43352,4.46561,9.7828,28.58942l.53274,15.48558c.63969,18.59428,11.15072,35.43482,27.57368,44.17799l13.67728,7.28141,13.14452-8.20415c15.78328-9.85113,25.11211-27.37422,24.47243-45.9685Z"/>
+</svg>
