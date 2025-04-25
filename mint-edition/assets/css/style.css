@@ -48,7 +48,7 @@ img {
 
 
 .on-desktop {
-    display: none;
+    display: none !important;
 }
 
 /*  */
@@ -369,7 +369,7 @@ img {
     text-shadow: none;
     max-width: 90%;
     margin: 0px auto 25px auto;
-    font-size: 45px;
+    font-size: 40px;
 }
 
 .product-section .title.red {
@@ -414,9 +414,9 @@ img {
 
 .product-section h3 {
     font-family: helen-regular;
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 600;
-    padding: 5px 0px 5px 20px;
+    padding: 5px 10px 5px 20px;
     background: var(--main-yellow);
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -458,7 +458,7 @@ img {
     align-items: center;
     margin: 10px 0px;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 22px;
     border-bottom: 1px solid var(--main-yellow);
     padding-bottom: 4px;
     position: relative;
@@ -926,12 +926,12 @@ img {
 }
 
 .pulse-dots .dots .dot#one {
-    top: 37%;
-    left: 70%;
+    top: 50%;
+    left: 73%;
 }
 
 .pulse-dots .dots .dot#two {
-    top: 62%;
+    top: 57%;
     left: 40%;
 }
 
@@ -964,7 +964,7 @@ img {
 }
 
 .pulse-dots .underpulse-text h3 {
-    font-size: 25px;
+    font-size: 23px;
     color: var(--main-red);
     text-transform: uppercase;
 }
@@ -1512,7 +1512,7 @@ img {
     font-weight: 100;
     font-weight: 400;
     line-height: 1.2;
-    margin-top: 18px;
+    margin-top: 30px;
 }
 
 .last-cta-banner p {
@@ -1530,16 +1530,14 @@ img {
 @media only screen and (min-width: 768px) {
 
     .on-desktop {
-        display: block;
+        display: block !important;
     }
 
     .on-mobile {
         display: none !important;
     }
 
-    .hero img.logo {
-        width: 100px;
-    }
+
 
     .hero .hero-content {
         transform: translate(-50%, -50%);
@@ -1788,7 +1786,7 @@ img {
 
     .product-ingredients {
         display: grid;
-        grid-template-columns: 500px 500px;
+        grid-template-columns: 1fr 1fr;
         justify-items: center;
         justify-content: center;
         align-items: center;
@@ -2165,6 +2163,7 @@ img {
 
     .last-cta-banner h2 {
         font-size: 46px;
+        font-weight: 800;
     }
 
     .last-cta-banner p {
@@ -2173,6 +2172,12 @@ img {
 }
 
 @media only screen and (min-width: 1200px) {
+    .hero img.logo {
+        transform: translate(-50%, -50%);
+        top: 8%;
+        left: 50%;
+    }
+
     .hero .hero-content h1 {
         font-size: 40px;
     }
@@ -2209,17 +2214,17 @@ img {
     }
 
     .cta-banner-best-seller h2 {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .cta-banner-best-seller p span {
-        font-size: 16px;
+        font-size: 22px;
     }
 
     .cta-banner-best-seller p {
         position: absolute;
-        max-width: 35%;
-        right: 45px;
+        max-width: 42%;
+        right: 31px;
         top: 30%;
     }
 
@@ -2229,11 +2234,12 @@ img {
 
     .cta-banner-best-seller h2 {
         top: 17%;
+        left: 75%;
     }
 
     .cta-banner-best-seller .orange-cta-desktop {
         font-size: 25px;
-        margin: 65px auto 5px auto;
+        margin: 10px auto 5px auto;
     }
 
     .cta-banner-best-seller .steps {
@@ -2287,8 +2293,10 @@ img {
         font-size: 26px;
     }
 
+
     .prepare {
-        padding: 55px 0px 100px;
+        padding: 150px 0px 100px 0px;
+        background: url(../images/summer/palm-leaf-1.webp) 0px 0px / 28% no-repeat;
     }
 
     .prepare .preparing-container {
@@ -2309,11 +2317,13 @@ img {
         width: 30%;
         font-size: 50px;
         top: 21%;
+        left: 65%;
     }
 
     .pulse-dots .underpulse-text {
         width: 22%;
         padding: 40px 20px 27px 20px;
+        left: 65%;
     }
 
     .pulse-dots .underpulse-text img {
@@ -2326,8 +2336,8 @@ img {
     }
 
     .pulse-dots .dots .dot#three {
-        top: 18%;
-        left: 21%;
+        top: 21%;
+        left: 29%;
     }
 
     .pulse-dots .dots .dot#one {
@@ -2362,403 +2372,397 @@ img {
     }
 
     .last-cta-banner .text {
-        transform: translate(95%, 45%);
+        transform: translate(95%, 60%);
+        max-width: 33%;
+        left: 18%;
     }
 
     .teas-steps {
         background: url(../images/summer/palm-leaf-2.webp) 100% 0% / 28% no-repeat;
     }
-}
-
-@media only screen and (min-width: 1400px) {
-    .hero .hero-content h1 {
-        font-size: 45px;
-    }
-
-    .hero .hero-content p {
-        font-size: 24px;
-    }
-
-    .title {
-        font-size: 45px;
-    }
-
-    .sub {
-        font-size: 24px;
-    }
-
-    .prepare .preparing-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.18);
-        border-radius: 20px;
-        max-width: 28%;
-        margin: 0 auto;
-        justify-items: center;
-    }
-
-    .cta-banner-best-seller .arrow {
-        left: 50%;
-    }
-
-    .cta-banner-effect h2 {
-        font-size: 50px;
-    }
-
-    .teas-steps .row.second .leftside .days .day-item img {
-        width: 170px;
-    }
-
-    .teas-steps .row {
-        max-width: 50%;
-    }
-
-    .teas-steps .row .text {
-        max-width: 55%;
-    }
-
-    .teas-steps .row .steps {
-        max-width: 100%;
-    }
-
-    .teas-steps .row.second .additional-info {
-        width: 30%;
-        margin-left: 40px;
-    }
-
-    .tp-banner {
-        margin-top: 100px;
-    }
-}
-
-
-@media only screen and (min-width: 1600px) {
-    .hero .hero-content h1 {
-        font-size: 52px;
-    }
-
-    .hero .hero-content p {
-        font-size: 28px;
-    }
-
-    .cta-banner-best-seller h2 {
-        font-size: 40px;
-    }
-
-
-    .cta-banner-effect h2 {
-        font-size: 56px;
-    }
-
-    .cta-banner-effect p {
-        font-size: 25px;
-    }
-
-    .offers-slider {
-        width: 50%;
-    }
-
-    .last-cta-banner .container {
-        width: 60%;
-    }
-
-    .last-cta-banner h2 {
-        font-size: 55px;
-    }
-
-    .cta-banner-best-seller p {
-        position: absolute;
-        max-width: 30%;
-        right: 120px;
-        top: 30%;
-    }
-
-    .cta-banner-best-seller p span {
-        font-size: 23px;
-    }
-
-    .cta-banner-best-seller .steps div.step-two {
-        margin-top: 90px;
-    }
-
-    .pulse-dots h2 {
-        width: 35%;
-        font-size: 75px;
-        top: 21%;
-    }
-
-    .pulse-dots .underpulse-text h3 {
-        font-size: 40px;
-    }
-
-    .pulse-dots .underpulse-text {
-        width: 27%;
-        padding: 60px 20px 27px 20px;
-    }
-
-    .pulse-dots .underpulse-text img {
-        width: 70px;
-        height: 70px;
-    }
-
-    .last-cta-banner .text {
-        transform: translate(-50%, 60%);
-        left: 68%;
-        max-width: 55%;
-    }
-
-    .last-cta-banner p {
-        font-size: 35px;
-    }
-
-    .red-cta {
-        font-size: 40px;
-    }
-
-    .orange-cta {
-        font-size: 45px;
-        width: 345px;
-    }
-}
-
-@media only screen and (min-width: 1800px) {
-
-    .cta-banner-best-seller .arrow {
-        width: 65px;
-    }
-
-    .product-ingredients .title {
-        font-size: 36px;
-    }
-
-    .product-ingredients .title span {
-        font-size: 30px;
-    }
-
-
-    .cta-banner-effect h2 {
-        font-size: 62px;
-    }
-
-    .last-cta-banner .container {
-        width: 50%;
-    }
-}
-
-@media only screen and (min-width: 1900px) {
-
-    .hero .hero-content h1 {
-        font-size: 50px;
-    }
-
-    .hero .hero-content p {
-        width: 25%;
-        margin: 3px auto;
-    }
-
-    .title {
-        font-size: 50px;
-    }
-
-    .cta-banner-best-seller h2 {
-        font-size: 50px;
-        left: 79%;
-    }
-
-    .cta-banner-effect h2 {
-        font-size: 65px;
-    }
-
-    .cta-banner-best-seller h2 img {
-        width: 70px;
-    }
-
-    .cta-banner-best-seller p {
-        top: 43%;
-    }
-
-    .cta-banner-best-seller h2 {
-        font-size: 50px;
-        left: 79%;
-        top: 28%;
-    }
-
-    .cta-banner-best-seller p img {
-        width: 20px;
-    }
-
-    .product-ingredients {
-        grid-template-columns: 600px 600px;
-    }
-
-    .product-section-grid,
-    .product-journey .journey {
-        grid-template-columns: 600px 600px;
-    }
-
-    .hero-arrow {
-        top: 47%;
-        left: 50%;
-    }
-
-    .hero .underhero-content div.border {
-        font-size: 40px;
-        padding: 5px 25px;
-    }
-
-    .underhero-bullets {
-        max-width: 45%;
-    }
-
-    .cta-banner-best-seller .steps div {
-        font-size: 25px;
-    }
-
-    .wow-badges {
-        grid-template-columns: repeat(4, 90px);
-    }
-
-    .wow-badges img {
-        max-width: 90px;
-    }
-
-    .product-section h3 {
-        font-size: 30px;
-        max-width: 75%;
-    }
-
-    .product-section p {
-        font-size: 26px;
-    }
-
-    .product-section .product-section-grid .white-arrow {
-        top: 60%;
-        left: 41%;
-        width: 69px;
-    }
-
-    .product-section .product-section-header div img {
-        width: 140px;
-    }
-
-    .prepare .preparing-container .text h2 {
-        font-size: 40px;
-    }
-
-    .prepare .preparing-container .text p.red-text {
-        font-size: 20px;
-    }
-
-    .prepare .preparing-container .text p {
-        font-size: 20px;
-    }
-
-    .prepare .preparing-container .text img.arrow {
-        width: 100px;
-    }
-
-    .prepare .preparing-container .text {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-
-    .product-section .title {
-        font-size: 85px;
-    }
-
-    .product-ingredients .title {
-        padding-left: 0;
-    }
-
-    .teas-steps .row .text h2 {
-        font-size: 55px;
-    }
-
-    .teas-steps .row .text p {
-        font-size: 25px;
-        max-width: 75%;
-        margin: 0 auto;
-    }
-
-    .teas-steps .row.second .leftside .days .day-item img {
-        width: 250px;
-    }
-
-    .teas-steps .row.second .rightside .days-description p {
-        font-size: 22px;
-    }
-
-    .teas-steps .row.second .days .day-item .day-item-nums p {
-        font-size: 20px;
-    }
-
-    .teas-steps .row.second .additional-info {
-        width: 30%;
-        margin-left: 60px;
-    }
-
-    .teas-steps .row .steps .step-item .step-text {
-        font-size: 30px;
-    }
-
-    .teas-steps .row.second .days .day-item .day-item-text {
-        font-size: 25px;
-    }
-
-    .teas-steps .row .steps .step-item p {
-        font-size: 30px;
-        font-weight: 800;
-    }
-
-    .pulse-dots .dots .dot {
-        width: 50px;
-        height: 50px;
-    }
-
-    .blue-badges .badge p {
-        text-align: center;
-        font-size: 25px;
-    }
-
-    .summer-program .stat p {
-        font-size: 22px;
-    }
-
-    .summer-program .content h2 {
-        font-size: 60px;
-        margin-top: 0;
-        color: #20BCE4;
-        text-align: left;
-    }
-
-    .summer-program .stat strong {
-        font-size: 45px;
-    }
 
     .tp-banner .orange-cta {
-        margin: -40px auto 0 auto;
+        width: fit-content;
+        margin: -50px auto 0px auto;
+        padding: 0px 40px;
     }
 
-    .hero img.logo {
-        transform: translate(-50%, -50%);
-        top: 8%;
-        left: 50%;
+    @media only screen and (min-width: 1400px) {
+        .hero .hero-content h1 {
+            font-size: 45px;
+        }
+
+        .hero .hero-content p {
+            font-size: 24px;
+        }
+
+        .title {
+            font-size: 45px;
+        }
+
+        .sub {
+            font-size: 24px;
+        }
+
+        .prepare .preparing-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.18);
+            border-radius: 20px;
+            max-width: 28%;
+            margin: 0 auto;
+            justify-items: center;
+        }
+
+        .cta-banner-best-seller .arrow {
+            left: 50%;
+        }
+
+        .cta-banner-effect h2 {
+            font-size: 50px;
+        }
+
+        .teas-steps .row.second .leftside .days .day-item img {
+            width: 170px;
+        }
+
+        .teas-steps .row {
+            max-width: 50%;
+        }
+
+        .teas-steps .row .text {
+            max-width: 55%;
+        }
+
+        .teas-steps .row .steps {
+            max-width: 100%;
+        }
+
+        .teas-steps .row.second .additional-info {
+            width: 30%;
+            margin-left: 40px;
+        }
+
+        .tp-banner {
+            margin-top: 100px;
+        }
     }
 
-    .prepare {
-        padding: 150px 0px 100px 0px;
-        background: url(../images/summer/palm-leaf-1.webp) 0px 0px / 28% no-repeat;
+
+    @media only screen and (min-width: 1600px) {
+        .hero .hero-content h1 {
+            font-size: 52px;
+        }
+
+        .hero .hero-content p {
+            font-size: 28px;
+        }
+
+        .cta-banner-best-seller h2 {
+            font-size: 40px;
+            left: 71%;
+            max-width: 20%;
+            top: 20%;
+        }
+
+
+        .cta-banner-effect h2 {
+            font-size: 56px;
+        }
+
+        .cta-banner-best-seller p {
+            position: absolute;
+            max-width: 30%;
+            right: 235px;
+            top: 29%;
+            font-size: 25px;
+        }
+
+        .offers-slider {
+            width: 50%;
+        }
+
+        .last-cta-banner .container {
+            width: 60%;
+        }
+
+        .last-cta-banner h2 {
+            font-size: 55px;
+        }
+
+        .cta-banner-best-seller p span {
+            font-size: 23px;
+        }
+
+        .cta-banner-best-seller .steps div.step-two {
+            margin-top: 90px;
+        }
+
+        .pulse-dots h2 {
+            width: 35%;
+            font-size: 75px;
+            top: 21%;
+        }
+
+        .pulse-dots .underpulse-text h3 {
+            font-size: 40px;
+        }
+
+        .pulse-dots .underpulse-text {
+            width: 27%;
+            padding: 60px 20px 27px 20px;
+        }
+
+        .pulse-dots .underpulse-text img {
+            width: 70px;
+            height: 70px;
+        }
+
+        .last-cta-banner .text {
+            transform: translate(-50%, 60%);
+            left: 68%;
+            max-width: 55%;
+        }
+
+        .last-cta-banner p {
+            font-size: 35px;
+        }
+
+        .red-cta {
+            font-size: 40px;
+        }
+
+        .orange-cta {
+            font-size: 45px;
+            width: 345px;
+        }
     }
 
-    .blue-badges {
-        margin: -20px auto;
-        max-width: 100%;
-        padding: 20px 25px;
-        display: grid;
-        grid-template-columns: repeat(3, 150px);
-        gap: 40px;
-        margin: -20px 0px;
-        justify-content: center;
+    @media only screen and (min-width: 1800px) {
+
+        .cta-banner-best-seller .arrow {
+            width: 65px;
+        }
+
+        .product-ingredients .title {
+            font-size: 36px;
+        }
+
+        .product-ingredients .title span {
+            font-size: 30px;
+        }
+
+
+        .cta-banner-effect h2 {
+            font-size: 62px;
+        }
+
+        .last-cta-banner .container {
+            width: 50%;
+        }
     }
-}
+
+    @media only screen and (min-width: 1900px) {
+
+        .hero .hero-content h1 {
+            font-size: 50px;
+        }
+
+        .hero .hero-content p {
+            width: 25%;
+            margin: 3px auto;
+        }
+
+        .title {
+            font-size: 50px;
+        }
+
+        .cta-banner-best-seller h2 {
+            font-size: 50px;
+        }
+
+        .cta-banner-effect h2 {
+            font-size: 65px;
+        }
+
+        .cta-banner-best-seller h2 img {
+            width: 70px;
+        }
+
+        .cta-banner-best-seller p {
+            top: 33%;
+            right: 255px;
+        }
+
+        .cta-banner-best-seller h2 {
+            font-size: 50px;
+        }
+
+        .cta-banner-best-seller p img {
+            width: 20px;
+        }
+
+        .product-ingredients {
+            grid-template-columns: 600px 600px;
+        }
+
+        .product-section-grid,
+        .product-journey .journey {
+            grid-template-columns: 600px 600px;
+        }
+
+        .hero-arrow {
+            top: 47%;
+            left: 50%;
+        }
+
+        .hero .underhero-content div.border {
+            font-size: 40px;
+            padding: 5px 25px;
+        }
+
+        .underhero-bullets {
+            max-width: 45%;
+        }
+
+        .cta-banner-best-seller .steps div {
+            font-size: 25px;
+        }
+
+        .wow-badges {
+            grid-template-columns: repeat(4, 90px);
+        }
+
+        .wow-badges img {
+            max-width: 90px;
+        }
+
+        .product-section h3 {
+            font-size: 30px;
+            max-width: 75%;
+        }
+
+        .product-section p {
+            font-size: 26px;
+        }
+
+        .product-section .product-section-grid .white-arrow {
+            top: 60%;
+            left: 41%;
+            width: 69px;
+        }
+
+        .product-section .product-section-header div img {
+            width: 140px;
+        }
+
+        .prepare .preparing-container .text h2 {
+            font-size: 40px;
+        }
+
+        .prepare .preparing-container .text p.red-text {
+            font-size: 20px;
+        }
+
+        .prepare .preparing-container .text p {
+            font-size: 20px;
+        }
+
+        .prepare .preparing-container .text img.arrow {
+            width: 100px;
+        }
+
+        .prepare .preparing-container .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        .product-section .title {
+            font-size: 85px;
+        }
+
+        .product-ingredients .title {
+            padding-left: 0;
+        }
+
+        .teas-steps .row .text h2 {
+            font-size: 55px;
+        }
+
+        .teas-steps .row .text p {
+            font-size: 25px;
+            max-width: 75%;
+            margin: 0 auto;
+        }
+
+        .teas-steps .row.second .leftside .days .day-item img {
+            width: 250px;
+        }
+
+        .teas-steps .row.second .rightside .days-description p {
+            font-size: 22px;
+        }
+
+        .teas-steps .row.second .days .day-item .day-item-nums p {
+            font-size: 20px;
+        }
+
+        .teas-steps .row.second .additional-info {
+            width: 30%;
+            margin-left: 60px;
+        }
+
+        .teas-steps .row .steps .step-item .step-text {
+            font-size: 30px;
+        }
+
+        .teas-steps .row.second .days .day-item .day-item-text {
+            font-size: 25px;
+        }
+
+        .teas-steps .row .steps .step-item p {
+            font-size: 30px;
+            font-weight: 800;
+        }
+
+        .pulse-dots .dots .dot {
+            width: 50px;
+            height: 50px;
+        }
+
+        .blue-badges .badge p {
+            text-align: center;
+            font-size: 25px;
+        }
+
+        .summer-program .stat p {
+            font-size: 22px;
+        }
+
+        .summer-program .content h2 {
+            font-size: 60px;
+            margin-top: 0;
+            color: #20BCE4;
+            text-align: left;
+        }
+
+        .summer-program .stat strong {
+            font-size: 45px;
+        }
+
+        .tp-banner .orange-cta {
+            margin: -40px auto 0 auto;
+        }
+
+        .blue-badges {
+            margin: -20px auto;
+            max-width: 100%;
+            padding: 20px 25px;
+            display: grid;
+            grid-template-columns: repeat(3, 150px);
+            gap: 40px;
+            margin: -20px 0px;
+            justify-content: center;
+        }
+    }
